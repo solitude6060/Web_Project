@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--2015/10/18 U10316045 Margo's web homework encoding by UTF-8-->
+<!--Test page of web's project 2015/12/7-->
+<html>
+<head>
+	<!--Bootstrap 元件 src-->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<!-- 最新編譯和最佳化的 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- 選擇性佈景主題 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<!-- 最新編譯和最佳化的 JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.11">
+  <style type="text/css">
+  div.p1{
+  	 	width:650px; 
+		text-align: justify;
+  }
+  </style>
+  
+  <title>Test Web</title>
+
+</head>
+<body>
+<Script language="JavaScript">
+var reply = new Array("1","1","1","1","1","1","1","1","1","1");
+var correct = new Array("4","3","3","4","4","1","2","1","2","3");
+function test(){
+	var sum = 0;
+	var result = "";
+	for(var i = 0;i < correct.length;i++){
+		if(reply[i]!= correct[i]){
+			result = result+"第"+eval(i+1)+"題錯囉！<br>"
+			sum = sum+1;
+		}
+	}
+	var code='<p>總共10題<BR>答錯:'+sum+'題<br>共'+(100-sum*10)+'分</p>'; 
+	var click='<button onclick="window.close();">close window</button>';
+	var win=open('_blank' ,"width=120,height=350,toolbar=no,location=no,menubar=no,status=no,directories=no,resizable=no;");
+	win.document.open();
+	win.document.write(result+code+click);
+	win.document.close();
+}
+</Script>
+<div style="position:fixed;">
+<a target="_top" href="./Android_introduction.html">
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>首頁
+</button></a>
+</div><br><br>
+<center>
+<div class="p1">
+<font size=5>
+<p>(1)[基本題]請問與傳統功能型手機相對的是什麼？
+<br><Input Type="radio" Name="pr1" Value="1" onclick="reply[0]=1;" checked>(1)黑金剛
+<br><Input Type="radio" Name="pr1" Value="2" onclick="reply[0]=2;">(2)平板電腦
+<br><Input Type="radio" Name="pr1" Value="3" onclick="reply[0]=3;">(3)筆記型電腦
+<br><Input Type="radio" Name="pr1" Value="4" onclick="reply[0]=4;">(4)智慧型手機</p>
+<p>(2)[歷史題/難題]請問廣義上最早的智慧型手機是哪一家公司發表的？
+<br><Input Type="radio" Name="pr2" Value="1" onclick="reply[1]=1;" checked>(1)Apple
+<br><Input Type="radio" Name="pr2" Value="2" onclick="reply[1]=2;">(2)Google
+<br><Input Type="radio" Name="pr2" Value="3" onclick="reply[1]=3;">(3)IBM
+<br><Input Type="radio" Name="pr2" Value="4" onclick="reply[1]=4;">(4)HTC</p>
+<p>(3)[系統題]請問下列何者不是智慧型手機的作業系統？
+<br><Input Type="radio" Name="pr3" Value="1" onclick="reply[2]=1;" checked>(1)Android
+<br><Input Type="radio" Name="pr3" Value="2" onclick="reply[2]=2;">(2)Windows Mobile
+<br><Input Type="radio" Name="pr3" Value="3" onclick="reply[2]=3;">(3)Linux
+<br><Input Type="radio" Name="pr3" Value="4" onclick="reply[2]=4;">(4)iOS</p>
+<p>(4)[硬體題/陷阱題]請問下列何者正確？
+<br><Input Type="radio" Name="pr4" Value="1" onclick="reply[3]=1;" checked>(1)現在多數蘋果的手機都支援micro SD卡的擴充，讓我們在內存之外可以更有彈性的使用空間。
+<br><Input Type="radio" Name="pr4" Value="1" onclick="reply[3]=2;">(2)HD 720p解析度為720x480
+<br><Input Type="radio" Name="pr4" Value="1" onclick="reply[3]=3;">(3)CPU核心越多越好，時脈什麼的不重要
+<br><Input Type="radio" Name="pr4" Value="1" onclick="reply[3]=4;">(4)記憶體單位MB到GB的換算是 1024MB = 1GB</p>
+<p>(5)[硬體題]請問下列何者是手機CPU的品牌？
+<br><Input Type="radio" Name="pr5" Value="1" onclick="reply[4]=1;" checked>(1)高通(驍龍)
+<br><Input Type="radio" Name="pr5" Value="1" onclick="reply[4]=2;">(2)聯發科(曦力)
+<br><Input Type="radio" Name="pr5" Value="1" onclick="reply[4]=3;">(3)英特爾(凌動)
+<br><Input Type="radio" Name="pr5" Value="1" onclick="reply[4]=4;">(4)以上些是</p>
+<p>(6)[基本題]請問下列何者是時脈的單位？
+<br><Input Type="radio" Name="pr6" Value="1" onclick="reply[5]=1;" checked>(1)頻率
+<br><Input Type="radio" Name="pr6" Value="1" onclick="reply[5]=2;">(2)週期
+<br><Input Type="radio" Name="pr6" Value="1" onclick="reply[5]=3;">(3)公分/秒
+<br><Input Type="radio" Name="pr6" Value="1" onclick="reply[5]=4;">(4)公克</p>
+<p>(7)[推論題/難題]請問下列何者可能是內存空間越來越大的主要原因？
+<br><Input Type="radio" Name="pr7" Value="1" onclick="reply[6]=1;" checked>(1)內存比記憶卡便宜
+<br><Input Type="radio" Name="pr7" Value="1" onclick="reply[6]=2;">(2)Android近期不支援搬移應用程式到外接記憶卡
+<br><Input Type="radio" Name="pr7" Value="1" onclick="reply[6]=3;">(3)廠商大發慈悲
+<br><Input Type="radio" Name="pr7" Value="1" onclick="reply[6]=4;">(4)手機系統佔了一半以上的內存空間</p>
+<p>(8)[基礎題]請問電腦是採用幾進位制？
+<br><Input Type="radio" Name="pr8" Value="1" onclick="reply[7]=1;" checked>(1)2進位制
+<br><Input Type="radio" Name="pr8" Value="1" onclick="reply[7]=2;">(2)十進位制
+<br><Input Type="radio" Name="pr8" Value="1" onclick="reply[7]=3;">(3)八進位制
+<br><Input Type="radio" Name="pr8" Value="1" onclick="reply[7]=4;">(4)十六進位制</p>
+<p>(9)[系統題]請問在如果手上的蘋果手機還在支援範圍內升級系統要不要錢？
+<br><Input Type="radio" Name="pr9" Value="1" onclick="reply[8]=1;" checked>(1) X 
+<br><Input Type="radio" Name="pr9" Value="1" onclick="reply[8]=2;">(2) O 
+</p>
+<p>(10)[系統題]請問Android系統是源至於哪個開放原始碼作業系統？
+<br><Input Type="radio" Name="pr10" Value="1" onclick="reply[9]=1;" checked>(1)OSX
+<br><Input Type="radio" Name="pr10" Value="1" onclick="reply[9]=2;">(2)Windows
+<br><Input Type="radio" Name="pr10" Value="1" onclick="reply[9]=3;">(3)Linux
+<br><Input Type="radio" Name="pr10" Value="1" onclick="reply[9]=4;">(4)FreeBSD</p>
+<p><Input Type="Button" Value="送出答案" onclick="test()" ></p>
+</font>
+</div>
+</center>
+
+</body>
+</html>
