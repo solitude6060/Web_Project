@@ -1,0 +1,84 @@
+<html>
+
+<head>
+	<!--Bootstrap 元件 src-->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<!-- 最新編譯和最佳化的 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- 選擇性佈景主題 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<!-- 最新編譯和最佳化的 JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="D:\作業\動網\page-scroll-effects\page-scroll-effects\css\style.css"> </script>
+	<meta charset="utf-8">
+	<meta name="updater" content="Liz">
+	<meta name="generator" content="sublime">
+	<meta http-equiv="Content-Type" content="text/html">
+	<style type="text/css">
+	div{text-decoration:none;color:black;}
+	a{text-decoration:none;color:black;}
+	a:hover{color:#000000; text-decoration:none;}
+	</style>
+</head>
+
+<body>
+<center>
+<div style="position: fixed;">
+
+<a target="_top" href="./index.html">
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>首頁
+</button></a>
+</div>
+<a name="title">
+<div class="p1"><br><br>
+		<div class="page-header">
+  			<h1>Phonegap</h1>
+		</div>
+	<p>
+		<img src="./phonegap-logo.png"><br><br><br><br>
+	</p>
+	<p>
+		<font size=5>
+			<b>認識Phonegap</b>
+		</font><br><br>
+		<font size=4>
+ 			PhoneGap是一個跨平台行動開發解決方案，它把行動網頁的介面包成像原生軟體一樣。可以用寫網頁的方式寫App。 <br><br>
+		</font>
+	</P>
+	<a name="P1">
+	<p>
+	<font size=4>
+		首先進入Phonegap的下載網頁。<br>
+		下載之後進行安裝<br>
+	</p>
+	<a name="p2">
+	<p>
+	<font size=4>
+	<img src="./AndroidP.png"><br>
+		建立一個專案本文以 [helloinside]為名稱，分別輸入專案的屬性為<br>
+		Application name：helloinside<br>
+		Package name：com.phonegap.helloinside<br>
+		Create Activity：app<br>
+		再選擇一個需要的Android版本<br><br><br><br>
+	<img src="./1.png"><br>
+		接著在你建立Android的workspace的根目錄，新增二個目錄<br>
+		/libs<br>
+		/assets/www<br>
+	<img src="./2.png"><br>
+		在Eclipse裡展開專案，並點開[src] –> [com.phonegap.helloinside] –> [app.java] 並執行以下步驟：<br>
+		把Class extends 名稱從Activity 改成 DroidGap<br>
+		把最後一行的setContentView(R.layout.main);改成 super.loadUrl(file:///android_asset/www/index.html);<br>
+		在程式碼上方加入 Add import com.phonegap.*;<br>
+
+		右鍵點選專案中的AndroidManifest.xml，並選擇Open With -> Text Editor，接著把以下的程式碼都複製到android:versionName="1.0″>後面<br>
+	<img src="./3.png"><br>
+		存檔後，一個phonegap 的開發環境就完成了。<br>3
+	<img src="./4.png"><br>
+
+
+
+</body>
+
+
+</html>
