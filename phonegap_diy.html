@@ -1,0 +1,175 @@
+<!--Introduction to phinegap real diy of Web's Project code by U10316045 create in 12/29/2015-->
+<html>
+<head>
+	<!--Bootstrap 元件 src-->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<!-- 最新編譯和最佳化的 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- 選擇性佈景主題 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<!-- 最新編譯和最佳化的 JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.13">
+  <style type="text/css">
+  div.class1{
+		 width:650px; 
+		 text-align: justify;
+	} 
+	a{text-decoration:none;color:black;}
+	a:hover{color:#000000; text-decoration:none;}
+	 
+  </style>
+</head>
+<body >
+
+<div style="position: fixed;">
+	<a target="_top" href="./index.html">
+	<button type="button" class="btn btn-default" aria-label="Left Align">
+  	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>首頁
+	</button></a>
+	<a target="_top" href="phonegap.html">
+		<button type="button" class="btn btn-default" aria-label="Left Align">
+  		<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>去其他頁面
+		</button>
+	</a>
+	<!-- Single button -->
+	<sdiv class="btn-group">
+  		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+   		 步驟介紹 <span class="caret"></span>
+  		</button>
+  	<ul class="dropdown-menu" role="menu">
+    <li><a href="./phonegap_diy.html#p1" target="_top">安裝之前</a></li>
+    <li><a href="./phonegap_diy.html#p2" target="_top">正式安裝與生成</a></li>
+    <li><a href="./phonegap_diy.html#p3" target="_top">網頁轉App</a></li>
+    <li><a href="./phonegap_diy.html#QR" target="_top">QR Code</a></li>
+    	<li class="divider"></li>
+    	<li><a href="./phonegap_diy.html#title" target="_top">回到頂部</a></li>
+  	</ul>
+	</div>
+</div>
+
+
+<center>
+<a name="title">
+<div class="class1"><br><br>
+	<div class="page-header">
+  		<h1>Phonegap全記錄<small>How Webs become Apps</small></h1>
+	</div><br>
+	<p>
+		<img src="./phonegap-logo.png"><br><br><br><br>
+	</p>
+	<p>
+	<font size=5><b>
+		一句話說明Phonegap 
+	</b></font><br><br>
+	<font size=4>
+		一言以蔽之，Phonegap就是一種將寫好的Webs封裝成手機Apps的技術。
+		<br><br>
+	</font>
+	</p>
+	
+	<a name="p1">
+	<p>
+	<font size=5><b>安裝之前</b><br><br>
+	</font>
+	<p>
+		<img src="./img/ph_1.png"><br><br><br><br>
+	</p>
+	<font size=4>
+	來到<a target="_blank" href="http://phonegap.com/install/"><u>官網</u></a>，
+	第一個看到到就是如何insatll，這邊說：To install, ensure that you have NodeJS installed, then open your command-line and run the following.
+	 所以在安裝phonegap之前我們必須要先行安裝NodeJS。接著我們來到NodeJS的<a target="_blank" href="https://nodejs.org/en/"><u>下載頁面</u></a><br><br>
+	<p>
+		<img src="./img/ph_2.png"><br><br>
+	</p>
+	筆者這邊使用測試環境的是Macbook pro 2015early 所以在下載畫面出現的是mac osx的版本。隨著不同版本的電腦會出現不同相對應的下載頁面。<br><br>
+	接者便可以下載並安裝nodeJS，以下是在筆者電腦的安裝畫面。<br><br>
+	<p>
+		<img src="./img/ph_3.png"><br><br>
+		<img src="./img/ph_4.png"><br><br>
+	</p>
+	在下載資料夾中點選nodeJS的pkg安裝檔(windows大概就是exe檔)，安裝途中就只是一直按確定沒啥特別的。<br><br>
+	</font>
+	</p><br><br>
+	
+	<a name="p2">
+	<p>
+	<font size=5><b>正式安裝與生成</b><br>
+	</font>
+	<font size=4>
+	在mac中打開terminal(終端機)，或是打開windows中的command line，打入一開始phonegap官網上Install那邊的黑色框框的內文：$ sudo npm install -g phonegap
+	($號不用打)。這時如果你電腦有密碼，會要求你輸入密碼，輸入完就會看到安裝條在跑。<br><br>
+	<p >
+		<img src="./img/ph_6.png"><br><br>
+	</p>
+	在安裝之後我們可以在terminal(終端機)中輸入phonegap -h，以觀看phonegap在電腦中適用的指令。其中我們接著會用的便是倒數第三行的create指令。<br><br>
+	<p >
+		<img src="./img/ph_8.png"><br><br>
+	</p>
+	再來我們就要使用create指令在電腦中創建一個跟phonegap有關的資料夾。我們便在terminal(終端機)中輸入phonegap create test，此時我的一個phonegap資料夾
+	叫做test便在預設路徑中被下載、創立出來。(圖中間處)<br><br>
+	<p >
+		<img src="./img/ph_7.png"><br><br>
+	</p>
+	我們可以看到test資料夾已經創建好了。<br><br>
+	<p >
+		<img src="./img/ph_9.png"><br><br>
+	</p>
+	打開test資料夾其中有個www資料夾，點開後裡面有一個index.html檔。這邊是關鍵所在。<br><br>
+	<p >
+		<img src="./img/ph_10.png"><br><br>
+	</p>
+	index.html裡面的程式碼原本就只有一個phonegap的icon，而這個index.html就是放你想要轉成App的網頁的地方。以下筆者將
+	<a target="_blank" href="./example/index.html"><u>index.html</u></a>改成一個線上範例的簡易翻頁網頁。網頁內容並非本處重點就不詳加敘述<br><br>
+	<p >
+		<img src="./img/ph_11.png"><br><br>
+	</p>
+	</font>
+	</p><br><br>
+	
+	<a name="p3">
+	<p>
+	<font size=5><b>網頁轉成手機App</b><br>
+	</font>
+	<font size=4>
+	使用phonegap有幾種方法，其一是直接使用終端機並輸入phonegap build生成，其二是使用第三方IDE eclipse來開發。其三是使用Android 開發環境Android Studio來開發。
+	然而前三種方法多需要複雜的後續安裝及困難環境設定，當一般使用者出現問題時多半不知道要如何解決問題。所以筆者在這邊使用的是最方便和簡單的第四種方法 
+	- 使用phonegap官網上的現成的線上轉換。<br><br>
+	我們可以在phonegap官網的首頁中的中段找到一個這樣的地方。他便是線上轉換的入口。
+	<p>
+		<img src="./img/ph_12.png"><br><br>
+	</p>
+	這裡這個功能需要phonegap官網的帳號，所以還請註冊一個帳號。<br>
+	再來點選try it now按鍵，登入你的帳號(沒有太多用途的話免費帳號就好)，你將看到下列畫面。<br><br>
+	<p>
+		<img src="./img/ph_13.png"><br><br>
+	</p>
+	圖中你可以看到有兩個選擇，左邊你可以將你自己的github的專案的網址直接貼上去。而右邊你可以上傳你整個phonegap資料夾的壓縮檔(筆者這邊就是test資料夾)。<br>
+	而筆者本身寫程式就會有git的習慣，所以將選擇左邊方案貼上我自己的
+	<a target="_blank" href="https://github.com/solitude6060/web_test"><u>github專案網址</u></a>。(git相關概念請自行google)
+	<b><br>而在這邊有需要注意的</b>，
+	不管是上傳壓縮檔還是github網址都請移除資料夾中的platforms資料夾。<br>
+	接著按下Pull from .git repository按鍵就會生成一個可以下載App的頁面了！<br><br>
+	<p>
+		<img src="./img/ph_14.png"><br><br>
+	</p>
+	而後掃描頁面中的QR Code便可以在手機中下載Android的App安裝檔.APK檔了！<br><br>
+	<a name="QR">
+	<p>
+		<img src="./img/ph_15.png"><br><br>
+	</p>
+	</font>
+	</p>
+	
+</div>
+<hr><br><br>
+</center>
+<p align="right"><small>    <a href="./resource.html"><u>/資料來源/</u><a>     /CS.UTaipei_WEB</small></p>
+
+
+</body>
+</html>
